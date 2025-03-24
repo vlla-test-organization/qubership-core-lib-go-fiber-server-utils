@@ -1,0 +1,12 @@
+{
+  "specs": [
+    {
+      "specRootUrl": "/api/bluegreen",
+      "major": 1,
+      "minor": 10,
+      "supportedMajors": [
+        1
+      ]
+    }
+  ]
+}

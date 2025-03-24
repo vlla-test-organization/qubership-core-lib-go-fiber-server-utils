@@ -1,0 +1,6 @@
+deprecated:
+  api:
+    disabled: true
+    patterns:
+      - /deprecated-api/v1/** [GET PUT DELETE]
+      - /deprecated-api/v2/**
