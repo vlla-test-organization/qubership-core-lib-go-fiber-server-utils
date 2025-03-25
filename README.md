@@ -1,3 +1,9 @@
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?metric=coverage&project=Netcracker_qubership-core-lib-go-fiber-server-utils)](https://sonarcloud.io/summary/overall?id=Netcracker_qubership-core-lib-go-fiber-server-utils)
+[![duplicated_lines_density](https://sonarcloud.io/api/project_badges/measure?metric=duplicated_lines_density&project=Netcracker_qubership-core-lib-go-fiber-server-utils)](https://sonarcloud.io/summary/overall?id=Netcracker_qubership-core-lib-go-fiber-server-utils)
+[![vulnerabilities](https://sonarcloud.io/api/project_badges/measure?metric=vulnerabilities&project=Netcracker_qubership-core-lib-go-fiber-server-utils)](https://sonarcloud.io/summary/overall?id=Netcracker_qubership-core-lib-go-fiber-server-utils)
+[![bugs](https://sonarcloud.io/api/project_badges/measure?metric=bugs&project=Netcracker_qubership-core-lib-go-fiber-server-utils)](https://sonarcloud.io/summary/overall?id=Netcracker_qubership-core-lib-go-fiber-server-utils)
+[![code_smells](https://sonarcloud.io/api/project_badges/measure?metric=code_smells&project=Netcracker_qubership-core-lib-go-fiber-server-utils)](https://sonarcloud.io/summary/overall?id=Netcracker_qubership-core-lib-go-fiber-server-utils)
+
 # Fiber-server-utils
 
 `Fiber server utils` allows enabling some basic cloud-core functionality (such as security, registering context providers, etc.) 
