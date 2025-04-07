@@ -65,8 +65,8 @@ github.com/netcracker/qubership-core-lib-go-actuator-common/v2 v2.0.0-2025032413
 github.com/netcracker/qubership-core-lib-go-actuator-common/v2 v2.0.0-20250324135209-366d3f357d63/go.mod h1:W4BDHFnEFNqpo3nO1oahEhwc2/j4wIEJZr3ojv5cMBY=
 github.com/netcracker/qubership-core-lib-go-error-handling/v3 v3.0.0-20250324134328-455eeff1a9d3 h1:EvJBu/Ek6tQRp9v0E4UzZUc3b9qlUeIcoYUIZXA0odk=
 github.com/netcracker/qubership-core-lib-go-error-handling/v3 v3.0.0-20250324134328-455eeff1a9d3/go.mod h1:v/IO5VrGhkNa0diPsChl7jBL+0g2kG1y1oowvJgQg2c=
-github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250324061806-227fc2609b0a h1:wYquhS5RpMSi2+2KCNF81maS+rheCx/Kfs5XD6cJ2K4=
-github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250324061806-227fc2609b0a/go.mod h1:1EKZPAtxng7sFKRm+MjnsQ4wJfe1+/zxjuhli6kIRLQ=
+github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250407083535-e649acc3ec81 h1:kvVGqf7Bk0j7M+/znfew3Nzrwe4TJHYMm0hX20pc6do=
+github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250407083535-e649acc3ec81/go.mod h1:1EKZPAtxng7sFKRm+MjnsQ4wJfe1+/zxjuhli6kIRLQ=
 github.com/openzipkin/zipkin-go v0.4.3 h1:9EGwpqkgnwdEIJ+Od7QVSEIH+ocmm5nPat0G7sjsSdg=
 github.com/openzipkin/zipkin-go v0.4.3/go.mod h1:M9wCJZFWCo2RiY+o1eBCEMe0Dp2S5LDHcMZmk3RmK7c=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=

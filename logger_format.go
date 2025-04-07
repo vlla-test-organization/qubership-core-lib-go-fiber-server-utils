@@ -47,7 +47,9 @@ func getRequestId(ctx context.Context) string {
 func getTenantId(ctx context.Context) string {
 	if ctx != nil {
 		tenantProvider := serviceloader.MustLoad[tenant.TenantProviderI]()
-		return tenantProvider.GetTenantId(ctx)
+		if tenantId, err := tenantProvider.GetTenantId(ctx); err == nil {
+			return tenantId
+		}
 	}
 	return "-"
 }
