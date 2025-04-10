@@ -56,7 +56,22 @@ and at [config-server](https://github.com/netcracker/go-rest-utils-lib/blob/main
 > **_NOTE:_**  Configuration loading should be performed as one of the first steps in bootstrap time. 
 >That is why we strongly recommend putting configloader#Init method as the first position in the main#init method (see [quick example](#quick-example)).
 
-After properties initialization you may start creating `fiber.App` with provided builder.
+After properties initialization you should register security implemention - dummy or your own, the followning example shows registration of required services:
+
+```go
+import (
+	"github.com/netcracker/qubership-core-lib-go/v3/serviceloader"
+	"github.com/netcracker/qubership-core-lib-go/v3/security"
+  fib_security "github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/security"
+)
+
+func init() {
+  serviceloader.Register(1, &fib_security.DummyFiberServerSecurityMiddleware{})
+	serviceloader.Register(1, &security.TenantContextObject{})
+}
+```
+
+After that you may start creating `fiber.App` with provided builder.
 
 ### Builder
 `fiber-server-utils` uses the builder pattern and allows a convenient way to configure and build `fiber.App` instance. 

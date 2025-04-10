@@ -61,12 +61,12 @@ github.com/mitchellh/reflectwalk v1.0.2 h1:G2LzWKi524PWgd3mLHV8Y5k7s6XUvT0Gef6zx
 github.com/mitchellh/reflectwalk v1.0.2/go.mod h1:mSTlrgnPZtwu0c4WaC2kGObEpuNDbx0jmZXqmk4esnw=
 github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 h1:C3w9PqII01/Oq1c1nUAm88MOHcQC9l5mIlSMApZMrHA=
 github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822/go.mod h1:+n7T8mK8HuQTcFwEeznm/DIxMOiR9yIdICNftLE1DvQ=
-github.com/netcracker/qubership-core-lib-go-actuator-common/v2 v2.0.0-20250324135209-366d3f357d63 h1:d3D5ViNBGIqULksU17c6Z5Zgi9J//0tSwJ0kVZIkyow=
-github.com/netcracker/qubership-core-lib-go-actuator-common/v2 v2.0.0-20250324135209-366d3f357d63/go.mod h1:W4BDHFnEFNqpo3nO1oahEhwc2/j4wIEJZr3ojv5cMBY=
+github.com/netcracker/qubership-core-lib-go-actuator-common/v2 v2.0.0-20250410090252-53ba40f9d61e h1:NnFXtNejqVtAWmqQslyF0oNTtfcbLvTYAFnB9uvS1Ds=
+github.com/netcracker/qubership-core-lib-go-actuator-common/v2 v2.0.0-20250410090252-53ba40f9d61e/go.mod h1:WWgjaLzitEqMVsQ8wt4OAdRBXwIn2AqfxJa7dtA7DUM=
 github.com/netcracker/qubership-core-lib-go-error-handling/v3 v3.0.0-20250324134328-455eeff1a9d3 h1:EvJBu/Ek6tQRp9v0E4UzZUc3b9qlUeIcoYUIZXA0odk=
 github.com/netcracker/qubership-core-lib-go-error-handling/v3 v3.0.0-20250324134328-455eeff1a9d3/go.mod h1:v/IO5VrGhkNa0diPsChl7jBL+0g2kG1y1oowvJgQg2c=
-github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250407083535-e649acc3ec81 h1:kvVGqf7Bk0j7M+/znfew3Nzrwe4TJHYMm0hX20pc6do=
-github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250407083535-e649acc3ec81/go.mod h1:1EKZPAtxng7sFKRm+MjnsQ4wJfe1+/zxjuhli6kIRLQ=
+github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250410090100-eded4c69a462 h1:5nwCXm+cCxzGpqvUwrTS4xzgzK4WCC82xBj6yfCbln0=
+github.com/netcracker/qubership-core-lib-go/v3 v3.0.0-20250410090100-eded4c69a462/go.mod h1:1EKZPAtxng7sFKRm+MjnsQ4wJfe1+/zxjuhli6kIRLQ=
 github.com/openzipkin/zipkin-go v0.4.3 h1:9EGwpqkgnwdEIJ+Od7QVSEIH+ocmm5nPat0G7sjsSdg=
 github.com/openzipkin/zipkin-go v0.4.3/go.mod h1:M9wCJZFWCo2RiY+o1eBCEMe0Dp2S5LDHcMZmk3RmK7c=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=

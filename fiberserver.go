@@ -17,6 +17,7 @@ import (
 	"github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/internal/actuator/monitorpoint"
 	"github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/internal/actuator/pprofpoint"
 	"github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/internal/actuator/tracingpoint"
+	"github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/security"
 	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders"
 	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/ctxhelper"
 	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/ctxmanager"
@@ -25,25 +26,9 @@ import (
 )
 
 var logger logging.Logger
-var securityMiddleware SecurityMiddleware
-
-type SecurityMiddleware interface {
-	GetSecurityMiddleware() func(c *fiber.Ctx) error
-}
 
 func init() {
 	logger = logging.GetLogger("fiberserver")
-	serviceloader.Register(10, &dummyFiberServerSecurityMiddleware{})
-}
-
-type dummyFiberServerSecurityMiddleware struct {
-}
-
-func (m *dummyFiberServerSecurityMiddleware) GetSecurityMiddleware() func(c *fiber.Ctx) error {
-	logger.Info("Security middleware is not active by default")
-	return func(c *fiber.Ctx) error {
-		return c.Next()
-	}
 }
 
 type Builder struct {
@@ -166,7 +151,7 @@ func setDefaultValuesToConfig(config *fiber.Config) {
 }
 
 func enableSecurity(app *fiber.App) {
-	securityMiddleware = serviceloader.MustLoad[SecurityMiddleware]()
+	securityMiddleware := serviceloader.MustLoad[security.SecurityMiddleware]()
 	app.Use(securityMiddleware.GetSecurityMiddleware())
 }
 

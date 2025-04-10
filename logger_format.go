@@ -6,14 +6,13 @@ import (
 	"fmt"
 
 	"github.com/netcracker/qubership-core-lib-go/v3/serviceloader"
+	"github.com/netcracker/qubership-core-lib-go/v3/security"
 	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/xrequestid"
-	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/tenant"
 	"github.com/netcracker/qubership-core-lib-go/v3/logging"
 )
 
 func init() {
 	logging.DefaultFormat.SetMessageFormat(platformMessageFmt)
-	serviceloader.Register(3, &tenant.TenantContextObject{})
 }
 
 func platformMessageFmt(r *logging.Record, b *bytes.Buffer, color int, lvl string) (int, error) {
@@ -46,7 +45,7 @@ func getRequestId(ctx context.Context) string {
 
 func getTenantId(ctx context.Context) string {
 	if ctx != nil {
-		tenantProvider := serviceloader.MustLoad[tenant.TenantProviderI]()
+		tenantProvider := serviceloader.MustLoad[security.TenantProvider]()
 		if tenantId, err := tenantProvider.GetTenantId(ctx); err == nil {
 			return tenantId
 		}

@@ -16,12 +16,15 @@ import (
 	"time"
 
 	"github.com/gofiber/fiber/v2"
+
+	"github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/security"
 	"github.com/netcracker/qubership-core-lib-go-actuator-common/v2/apiversion"
 	"github.com/netcracker/qubership-core-lib-go-actuator-common/v2/health"
 	"github.com/netcracker/qubership-core-lib-go-actuator-common/v2/monitoring"
 	"github.com/netcracker/qubership-core-lib-go-actuator-common/v2/tracing"
 	"github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/test"
 	"github.com/netcracker/qubership-core-lib-go/v3/configloader"
+	"github.com/netcracker/qubership-core-lib-go/v3/serviceloader"
 	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/acceptlanguage"
 	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/xrequestid"
 	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/ctxhelper"
@@ -41,6 +44,7 @@ const (
 )
 
 func (suite *TestSuite) SetupSuite() {
+	serviceloader.Register(1, &security.DummyFiberServerSecurityMiddleware{})
 	test.StartMockServer()
 	configloader.InitWithSourcesArray([]*configloader.PropertySource{configloader.EnvPropertySource()})
 }
