@@ -5,8 +5,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/netcracker/qubership-core-lib-go/v3/serviceloader"
-	"github.com/netcracker/qubership-core-lib-go/v3/security"
+	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/tenant"
 	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/xrequestid"
 	"github.com/netcracker/qubership-core-lib-go/v3/logging"
 )
@@ -45,10 +44,12 @@ func getRequestId(ctx context.Context) string {
 
 func getTenantId(ctx context.Context) string {
 	if ctx != nil {
-		tenantProvider := serviceloader.MustLoad[security.TenantProvider]()
-		if tenantId, err := tenantProvider.GetTenantId(ctx); err == nil {
-			return tenantId
+		abstractTenantId := ctx.Value(tenant.TenantContextName)
+		if abstractTenantId != nil {
+			tenantId := abstractTenantId.(tenant.TenantContextObject)
+			return tenantId.GetTenant()
 		}
 	}
 	return "-"
 }
+

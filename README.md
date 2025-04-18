@@ -61,13 +61,11 @@ After properties initialization you should register security implemention - dumm
 ```go
 import (
 	"github.com/netcracker/qubership-core-lib-go/v3/serviceloader"
-	"github.com/netcracker/qubership-core-lib-go/v3/security"
-  fib_security "github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/security"
+  "github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/security"
 )
 
 func init() {
-  serviceloader.Register(1, &fib_security.DummyFiberServerSecurityMiddleware{})
-	serviceloader.Register(1, &security.TenantContextObject{})
+  serviceloader.Register(1, &security.DummyFiberServerSecurityMiddleware{})
 }
 ```
 
