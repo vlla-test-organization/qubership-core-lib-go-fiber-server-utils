@@ -12,8 +12,6 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/test"
 	"github.com/netcracker/qubership-core-lib-go/v3/configloader"
-	"github.com/netcracker/qubership-core-lib-go/v3/serviceloader"
-	"github.com/netcracker/qubership-core-lib-go/v3/security"
 	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/tenant"
 	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/xrequestid"
 	"github.com/netcracker/qubership-core-lib-go/v3/logging"
@@ -36,7 +34,6 @@ const (
 func init() {
 	os.Setenv("log.level", "debug")
 	configloader.InitWithSourcesArray([]*configloader.PropertySource{configloader.EnvPropertySource()})
-	serviceloader.Register(3, &security.TenantContextObject{})
 }
 
 func (suite *LoggerSuite) SetupSuite() {
