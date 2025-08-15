@@ -7,10 +7,10 @@ import (
 	"time"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/netcracker/qubership-core-lib-go-actuator-common/v2/monitoring"
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
 	"github.com/stretchr/testify/assert"
+	"github.com/vlla-test-organization/qubership-core-lib-go-actuator-common/v2/monitoring"
 )
 
 func TestEnablePrometheus_HttpStatus200(t *testing.T) {

@@ -9,10 +9,10 @@ import (
 	"testing"
 
 	"github.com/gofiber/fiber/v2"
-	errs "github.com/netcracker/qubership-core-lib-go-error-handling/v3/errors"
-	"github.com/netcracker/qubership-core-lib-go-error-handling/v3/tmf"
 	"github.com/stretchr/testify/require"
 	"github.com/valyala/fasthttp"
+	errs "github.com/vlla-test-organization/qubership-core-lib-go-error-handling/v3/errors"
+	"github.com/vlla-test-organization/qubership-core-lib-go-error-handling/v3/tmf"
 )
 
 func TestDefaultErrorHandler(t *testing.T) {

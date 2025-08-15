@@ -9,15 +9,15 @@ import (
 	"time"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/netcracker/qubership-core-lib-go-actuator-common/v2/apiversion"
-	"github.com/netcracker/qubership-core-lib-go-actuator-common/v2/health"
-	"github.com/netcracker/qubership-core-lib-go-actuator-common/v2/monitoring"
-	"github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/internal/actuator/apiversionpoint"
-	"github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/internal/actuator/healthpoint"
-	"github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/internal/actuator/monitorpoint"
-	"github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/internal/actuator/pprofpoint"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
+	"github.com/vlla-test-organization/qubership-core-lib-go-actuator-common/v2/apiversion"
+	"github.com/vlla-test-organization/qubership-core-lib-go-actuator-common/v2/health"
+	"github.com/vlla-test-organization/qubership-core-lib-go-actuator-common/v2/monitoring"
+	"github.com/vlla-test-organization/qubership-core-lib-go-fiber-server-utils/v2/internal/actuator/apiversionpoint"
+	"github.com/vlla-test-organization/qubership-core-lib-go-fiber-server-utils/v2/internal/actuator/healthpoint"
+	"github.com/vlla-test-organization/qubership-core-lib-go-fiber-server-utils/v2/internal/actuator/monitorpoint"
+	"github.com/vlla-test-organization/qubership-core-lib-go-fiber-server-utils/v2/internal/actuator/pprofpoint"
 )
 
 const healthResponse = `{"status":"UP"}`

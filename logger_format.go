@@ -5,9 +5,9 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/tenant"
-	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/xrequestid"
-	"github.com/netcracker/qubership-core-lib-go/v3/logging"
+	"github.com/vlla-test-organization/qubership-core-lib-go/v3/context-propagation/baseproviders/tenant"
+	"github.com/vlla-test-organization/qubership-core-lib-go/v3/context-propagation/baseproviders/xrequestid"
+	"github.com/vlla-test-organization/qubership-core-lib-go/v3/logging"
 )
 
 func init() {
@@ -52,4 +52,3 @@ func getTenantId(ctx context.Context) string {
 	}
 	return "-"
 }
-

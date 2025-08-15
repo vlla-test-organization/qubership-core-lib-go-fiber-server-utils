@@ -3,8 +3,8 @@ package deprecatedapi
 import (
 	"fmt"
 
-	"github.com/netcracker/qubership-core-lib-go-error-handling/v3/errors"
-	"github.com/netcracker/qubership-core-lib-go-error-handling/v3/tmf"
+	"github.com/vlla-test-organization/qubership-core-lib-go-error-handling/v3/errors"
+	"github.com/vlla-test-organization/qubership-core-lib-go-error-handling/v3/tmf"
 )
 
 var errorCode = errors.ErrorCode{

@@ -7,9 +7,9 @@ import (
 	"strings"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/netcracker/qubership-core-lib-go-actuator-common/v2/tracing"
-	"github.com/netcracker/qubership-core-lib-go/v3/logging"
 	"github.com/valyala/fasthttp"
+	"github.com/vlla-test-organization/qubership-core-lib-go-actuator-common/v2/tracing"
+	"github.com/vlla-test-organization/qubership-core-lib-go/v3/logging"
 	"go.opentelemetry.io/contrib/propagators/b3"
 	"go.opentelemetry.io/otel"
 	"go.opentelemetry.io/otel/propagation"

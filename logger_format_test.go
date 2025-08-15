@@ -10,13 +10,13 @@ import (
 	"time"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/netcracker/qubership-core-lib-go-fiber-server-utils/v2/test"
-	"github.com/netcracker/qubership-core-lib-go/v3/configloader"
-	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/tenant"
-	"github.com/netcracker/qubership-core-lib-go/v3/context-propagation/baseproviders/xrequestid"
-	"github.com/netcracker/qubership-core-lib-go/v3/logging"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/suite"
+	"github.com/vlla-test-organization/qubership-core-lib-go-fiber-server-utils/v2/test"
+	"github.com/vlla-test-organization/qubership-core-lib-go/v3/configloader"
+	"github.com/vlla-test-organization/qubership-core-lib-go/v3/context-propagation/baseproviders/tenant"
+	"github.com/vlla-test-organization/qubership-core-lib-go/v3/context-propagation/baseproviders/xrequestid"
+	"github.com/vlla-test-organization/qubership-core-lib-go/v3/logging"
 )
 
 type LoggerSuite struct {

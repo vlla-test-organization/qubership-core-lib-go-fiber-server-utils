@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/netcracker/qubership-core-lib-go-actuator-common/v2/apiversion"
 	"github.com/stretchr/testify/assert"
+	"github.com/vlla-test-organization/qubership-core-lib-go-actuator-common/v2/apiversion"
 )
 
 func TestEnableApiVersion(t *testing.T) {

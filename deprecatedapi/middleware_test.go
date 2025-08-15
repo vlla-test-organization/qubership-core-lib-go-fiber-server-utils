@@ -9,10 +9,10 @@ import (
 	"testing"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/netcracker/qubership-core-lib-go-error-handling/v3/tmf"
-	"github.com/netcracker/qubership-core-lib-go/v3/configloader"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
+	"github.com/vlla-test-organization/qubership-core-lib-go-error-handling/v3/tmf"
+	"github.com/vlla-test-organization/qubership-core-lib-go/v3/configloader"
 )
 
 type TestSuite struct {
