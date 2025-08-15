@@ -4,6 +4,10 @@ go 1.24.2
 
 toolchain go1.24.5
 
+retract (
+    v2.0.1
+)
+
 require (
 	github.com/gofiber/adaptor/v2 v2.2.1
 	github.com/gofiber/fiber/v2 v2.52.6
