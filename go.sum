@@ -90,6 +90,12 @@ github.com/vibrantbyte/go-antpath v1.1.1 h1:SWDIMx4pSjyo7QoAsgTkpNU7QD0X9O0JAgr5
 github.com/vibrantbyte/go-antpath v1.1.1/go.mod h1:ZqMGIk+no3BL2o6OdEZ3ZDiWfIteuastNSaTFv7kgUY=
 github.com/viney-shih/go-lock v1.1.2 h1:3TdGTiHZCPqBdTvFbQZQN/TRZzKF3KWw2rFEyKz3YqA=
 github.com/viney-shih/go-lock v1.1.2/go.mod h1:Yijm78Ljteb3kRiJrbLAxVntkUukGu5uzSxq/xV7OO8=
+github.com/vlla-test-organization/qubership-core-lib-go-actuator-common/v2 v2.0.4 h1:f7IsTwg6U9+FWNxi5t4mWbOkDq6JCTaquEF3BesY0PA=
+github.com/vlla-test-organization/qubership-core-lib-go-actuator-common/v2 v2.0.4/go.mod h1:8UBpKerApZYnj0yNkaM/xC4zJHUna4a7yJ5GnVItlww=
+github.com/vlla-test-organization/qubership-core-lib-go-error-handling/v3 v3.0.4 h1:koCXcKE7EJbuWGqmr1xw7tMga2KxL4pPx+nCdTyC4jg=
+github.com/vlla-test-organization/qubership-core-lib-go-error-handling/v3 v3.0.4/go.mod h1:vLBKd+Y5qzwah8B1qlvAK0C//f3RA3Yarhn97BxvrM8=
+github.com/vlla-test-organization/qubership-core-lib-go/v3 v3.0.4 h1:ZtcEm3ivx7E+UxXpFc3VxTdsIvKU5DNh0dhVf2clME8=
+github.com/vlla-test-organization/qubership-core-lib-go/v3 v3.0.4/go.mod h1:DC6VVLa4r2LxfPMoEn9WmQEdasR61DB5eEtJnIGRyXw=
 github.com/xyproto/randomstring v1.0.5 h1:YtlWPoRdgMu3NZtP45drfy1GKoojuR7hmRcnhZqKjWU=
 github.com/xyproto/randomstring v1.0.5/go.mod h1:rgmS5DeNXLivK7YprL0pY+lTuhNQW3iGxZ18UQApw/E=
 go.opentelemetry.io/auto/sdk v1.1.0 h1:cH53jehLUN6UFLY71z+NDOiNJqDdPRaXzTel0sJySYA=

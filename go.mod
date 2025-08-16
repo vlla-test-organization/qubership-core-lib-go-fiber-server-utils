@@ -4,22 +4,20 @@ go 1.24.2
 
 toolchain go1.24.5
 
-retract (
-    v2.0.1
-)
+retract v2.0.1
 
 require (
 	github.com/gofiber/adaptor/v2 v2.2.1
 	github.com/gofiber/fiber/v2 v2.52.6
-	github.com/vlla-test-organization/qubership-core-lib-go-actuator-common/v2 v2.0.3
-	github.com/vlla-test-organization/qubership-core-lib-go-error-handling/v3 v3.0.3
-	github.com/vlla-test-organization/qubership-core-lib-go/v3 v3.0.3
 	github.com/openzipkin/zipkin-go v0.4.3
 	github.com/prometheus/client_golang v1.22.0
 	github.com/prometheus/client_model v0.6.2
 	github.com/stretchr/testify v1.10.0
 	github.com/valyala/fasthttp v1.61.0
 	github.com/vibrantbyte/go-antpath v1.1.1
+	github.com/vlla-test-organization/qubership-core-lib-go-actuator-common/v2 v2.0.4
+	github.com/vlla-test-organization/qubership-core-lib-go-error-handling/v3 v3.0.4
+	github.com/vlla-test-organization/qubership-core-lib-go/v3 v3.0.4
 	go.opentelemetry.io/contrib/propagators/b3 v1.35.0
 	go.opentelemetry.io/otel v1.35.0
 	go.opentelemetry.io/otel/trace v1.35.0
